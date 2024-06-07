@@ -42,3 +42,11 @@ Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining 
 Alias: `npm run e`
 
 Open a prompt for choosing which exercise you'd like to run.
+
+
+### メモ
+
+- zodは型を定義しやすくする。
+- zメソッドで定義した型はzodObjectで、その型と一致するか検証できる関数を持つ。(ex: parse())
+- 検証する関数を用いて、validationをするのが主な使い方ぽい。
+- z.Infer<typeof z>でts型に変換できる。
