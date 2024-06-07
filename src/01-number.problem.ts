@@ -5,14 +5,16 @@ import { z } from "zod";
 //       ^ 🕵️‍♂️
 
 export const toString = (num: unknown) => {
-  return String(num);
+  const numberParser = z.number();
+  const parsed = numberParser.parse(num);
+  return String(parsed);
 };
 
 // TESTS
 
 it("Should throw a runtime error when called with not a number", () => {
   expect(() => toString("123")).toThrowError(
-    "Expected number, received string",
+    "Expected number, received string"
   );
 });
 
