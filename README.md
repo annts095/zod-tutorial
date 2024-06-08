@@ -50,3 +50,4 @@ Open a prompt for choosing which exercise you'd like to run.
 - zメソッドで定義した型はzodObjectで、その型と一致するか検証できる関数を持つ。(ex: parse())
 - 検証する関数を用いて、validationをするのが主な使い方ぽい。
 - z.Infer<typeof z>でts型に変換できる。
+- z.ZodType<T>でzodObjectに変換できる。
